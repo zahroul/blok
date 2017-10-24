@@ -1,3 +1,33 @@
 /*
 Theme Name: Blok
 */
+
+/**
+* Base
+*/
+body {
+	margin: 0;
+}
+
+article {
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+
+article :last-child {
+	margin-bottom: 1.5rem;
+}
+
+h2 {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+/**
+* Typography
+*/
+body {
+	font-family: Arial, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}

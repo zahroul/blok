@@ -17,6 +17,22 @@
 	</head>
 
 	<body>
+		<main>
+			<?php
+			if ( have_posts() ) :
+				while ( have_posts() ) :
+					the_post();
+					?>
+					<article>
+						<?php the_title( '<h2>', '</h2>' ); ?>
+						<?php the_excerpt(); ?>
+					</article>
+				<?php
+				endwhile;
+			endif;
+			?>
+		</main>
+
 		<?php wp_footer(); ?>
 	</body>
 </html>

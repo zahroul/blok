@@ -18,3 +18,13 @@ function blok_enqueue_styles() {
 	wp_enqueue_style( 'blok-style', get_stylesheet_uri() );
 }
 add_action( 'wp_enqueue_scripts', 'blok_enqueue_styles' );
+
+/**
+ * Modify the excerpt more's string
+ *
+ * @return string An ellipsis.
+ */
+function blok_excerpt_more() {
+	return ' &hellip; ';
+}
+add_filter( 'excerpt_more', 'blok_excerpt_more' );
