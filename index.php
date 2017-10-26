@@ -24,8 +24,17 @@
 					the_post();
 					?>
 					<article>
-						<?php the_title( '<h2><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' ); ?>
-						<?php the_excerpt(); ?>
+						<?php
+						if ( is_singular() ) {
+							the_title( '<h1>', '</h1>' );
+
+							the_content();
+						} else {
+							the_title( '<h2><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+
+							the_excerpt();
+						}
+						?>
 					</article>
 				<?php
 				endwhile;
