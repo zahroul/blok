@@ -5,6 +5,7 @@ Theme Name: Blok
 // ----------------------------------------------------------------------------
 // Variables
 // ----------------------------------------------------------------------------
+$content-margin: 1.5rem;
 $content-padding: 1.5rem;
 
 $black: #000;
@@ -59,8 +60,8 @@ h3,
 h4,
 h5,
 h6 {
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
+	margin-top: $content-margin;
+	margin-bottom: $content-margin;
 	color: $heading-text-color;
 	font-weight: 400;
 }
@@ -84,5 +85,5 @@ h3 {
 }
 
 p {
-	margin-bottom: 1.5rem;
+	margin-bottom: $content-margin;
 }
