@@ -18,7 +18,9 @@
 
 	<body>
 		<header>
-			<h1><?php bloginfo( 'name' ); ?></h1>
+			<h1 class="site-title">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
+			</h1>
 		</header>
 
 		<main>

@@ -15,6 +15,7 @@ $blue-2: #00e;
 $copy-text-color: $gray-20;
 $heading-text-color: $black;
 $link-text-color: $blue-2;
+$site-title-color: $black;
 
 /**
 * Base
@@ -100,4 +101,18 @@ ol {
 
 blockquote {
 	margin-bottom: $content-margin;
+}
+
+/**
+* Site Branding
+*/
+.site-title {
+
+	a {
+		color: $site-title-color;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }

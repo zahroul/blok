@@ -87,3 +87,14 @@ ol {
 blockquote {
 	margin-bottom: 1.5rem;
 }
+
+/**
+* Site Branding
+*/
+.site-title a {
+	color: #000;
+}
+
+.site-title a:hover {
+	text-decoration: none;
+}
