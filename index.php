@@ -17,6 +17,10 @@
 	</head>
 
 	<body>
+		<header>
+			<h1><?php bloginfo( 'name' ); ?></h1>
+		</header>
+
 		<main>
 			<?php
 			if ( have_posts() ) :
