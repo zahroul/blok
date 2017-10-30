@@ -17,6 +17,11 @@ $heading-text-color: $black;
 $link-text-color: $blue-2;
 $site-title-color: $black;
 
+$regular-font-size: 1rem;
+$large-font-size: 1.5rem;
+$x-large-font-size: 2rem;
+$xx-large-font-size: 2.5rem;
+
 /**
 * Base
 */
@@ -56,7 +61,7 @@ a {
 body {
 	color: $copy-text-color;
 	font-family: Arial, sans-serif;
-	font-size: 1rem;
+	font-size: $regular-font-size;
 	line-height: 1.5;
 }
 
@@ -79,15 +84,15 @@ h3 {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: $xx-large-font-size;
 }
 
 h2 {
-	font-size: 2rem;
+	font-size: $x-large-font-size;
 }
 
 h3 {
-	font-size: 1.5rem;
+	font-size: $large-font-size;
 }
 
 p {
@@ -107,7 +112,7 @@ blockquote {
 * Site Branding
 */
 .site-title {
-	font-size: 1.5rem;
+	font-size: $large-font-size;
 	line-height: 1;
 
 	a {
