@@ -35,6 +35,10 @@ a:active {
 	color: #00e;
 }
 
+img {
+	width: 100%;
+}
+
 /**
 * Typography
 */
