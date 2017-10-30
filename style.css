@@ -91,6 +91,11 @@ blockquote {
 /**
 * Site Branding
 */
+.site-title {
+	font-size: 1.5rem;
+	line-height: 1;
+}
+
 .site-title a {
 	color: #000;
 }
