@@ -36,17 +36,21 @@
 					the_post();
 					?>
 					<article>
+						<header>
+							<?php
+							if ( is_singular() ) {
+								the_title( '<h1>', '</h1>' );
+							} else {
+								the_title( '<h2><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
+							}
+
+							if ( 'post' === get_post_type() ) {
+								blok_post_meta();
+							}
+							?>
+						</header>
+
 						<?php
-						if ( is_singular() ) {
-							the_title( '<h1>', '</h1>' );
-						} else {
-							the_title( '<h2><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
-						}
-
-						if ( 'post' === get_post_type() ) {
-							blok_post_meta();
-						}
-
 						if ( is_singular() ) {
 							the_content();
 						} else {
