@@ -45,7 +45,7 @@
 
 						if ( 'post' === get_post_type() ) :
 						?>
-							<div>Posted on <time datetime="<?php the_time( 'c' ); ?>"><?php the_time( 'F j, Y' ); ?></time></div>
+							<div>Posted on <time datetime="<?php the_time( 'c' ); ?>"><?php the_time( 'F j, Y' ); ?></time> by <?php the_author(); ?></div>
 						<?php
 						endif;
 
