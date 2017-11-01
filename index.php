@@ -43,11 +43,9 @@
 							the_title( '<h2><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 						}
 
-						if ( 'post' === get_post_type() ) :
-						?>
-							<div>Posted on <time datetime="<?php the_time( 'c' ); ?>"><?php the_time( 'F j, Y' ); ?></time> by <?php the_author(); ?></div>
-						<?php
-						endif;
+						if ( 'post' === get_post_type() ) {
+							blok_post_meta();
+						}
 
 						if ( is_singular() ) {
 							the_content();

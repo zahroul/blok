@@ -28,3 +28,18 @@ function blok_excerpt_more() {
 	return ' &hellip; ';
 }
 add_filter( 'excerpt_more', 'blok_excerpt_more' );
+
+/**
+ * Print HTML with the current post meta's publication time and author
+ */
+function blok_post_meta() {
+	printf(
+		'<div class="entry-meta">Posted on %1$s by %2$s</div>',
+		sprintf(
+			'<time datetime="%1$s">%2$s</time>',
+			esc_attr( get_the_date( 'c' ) ),
+			esc_attr( get_the_date() )
+		),
+		esc_attr( get_the_author() )
+	);
+}
