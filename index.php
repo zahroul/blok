@@ -36,7 +36,7 @@
 					the_post();
 					?>
 					<article>
-						<header>
+						<header class="entry-header">
 							<?php
 							if ( is_singular() ) {
 								the_title( '<h1>', '</h1>' );

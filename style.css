@@ -107,3 +107,14 @@ blockquote {
 .site-title a:hover {
 	text-decoration: none;
 }
+
+/**
+* Entry
+*/
+.entry-header {
+	margin-bottom: 1.5rem;
+}
+
+.entry-meta {
+	color: #555;
+}

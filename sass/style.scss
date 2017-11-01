@@ -10,6 +10,7 @@ $content-padding: 1.5rem;
 
 $black: #000;
 $gray-20: lighten(#000, 20%);
+$gray-dark: lighten(#000, 33.5%);
 $blue-2: #00e;
 
 $copy-text-color: $gray-20;
@@ -126,4 +127,15 @@ blockquote {
 			text-decoration: none;
 		}
 	}
+}
+
+/**
+* Entry
+*/
+.entry-header {
+	margin-bottom: $content-margin;
+}
+
+.entry-meta {
+	color: $gray-dark;
 }
