@@ -14,11 +14,6 @@ article {
 	padding-left: 1.5rem;
 }
 
-header {
-	padding-right: 1.5rem;
-	padding-left: 1.5rem;
-}
-
 a {
 	text-decoration: none;
 }
@@ -93,8 +88,13 @@ blockquote {
 }
 
 /**
-* Site Branding
+* Site Header
 */
+.site-header {
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+
 .site-title {
 	font-size: 1.5rem;
 	line-height: 1;

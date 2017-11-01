@@ -34,11 +34,6 @@ article {
 	padding-left: $content-padding;
 }
 
-header {
-	padding-right: $content-padding;
-	padding-left: $content-padding;
-}
-
 a {
 	text-decoration: none;
 
@@ -113,8 +108,13 @@ blockquote {
 }
 
 /**
-* Site Branding
+* Site Header
 */
+.site-header {
+	padding-right: $content-padding;
+	padding-left: $content-padding;
+}
+
 .site-title {
 	font-size: $large-font-size;
 	line-height: 1;
