@@ -18,6 +18,7 @@ $heading-text-color: $black;
 $link-text-color: $blue-2;
 $site-title-color: $black;
 
+$small-font-size: 0.75rem;
 $regular-font-size: 1rem;
 $large-font-size: 1.5rem;
 $x-large-font-size: 2rem;
@@ -68,6 +69,11 @@ body {
 	font-family: Arial, sans-serif;
 	font-size: $regular-font-size;
 	line-height: 1.5;
+}
+
+footer {
+	color: $gray-dark;
+	font-size: $small-font-size;
 }
 
 h1,

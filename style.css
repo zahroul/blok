@@ -49,6 +49,11 @@ body {
 	line-height: 1.5;
 }
 
+footer {
+	color: #555;
+	font-size: 0.75rem;
+}
+
 h1,
 h2,
 h3,
