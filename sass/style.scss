@@ -16,6 +16,7 @@ $blue-2: #00e;
 $copy-text-color: $gray-20;
 $heading-text-color: $black;
 $link-text-color: $blue-2;
+$secondary-text-color: $gray-dark;
 $site-title-color: $black;
 
 $small-font-size: 0.75rem;
@@ -72,7 +73,7 @@ body {
 }
 
 footer {
-	color: $gray-dark;
+	color: $secondary-text-color;
 	font-size: $small-font-size;
 }
 
@@ -148,5 +149,5 @@ blockquote {
 }
 
 .entry-meta {
-	color: $gray-dark;
+	color: $secondary-text-color;
 }
