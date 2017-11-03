@@ -65,7 +65,7 @@
 		</main>
 
 		<footer>
-			<p>&copy; <?php the_date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p>
+			<?php blok_copyright_notice(); ?>
 		</footer>
 
 		<?php wp_footer(); ?>

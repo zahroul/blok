@@ -43,3 +43,14 @@ function blok_post_meta() {
 		esc_attr( get_the_author() )
 	);
 }
+
+/**
+ * Print HTML with the site copyright notice
+ */
+function blok_copyright_notice() {
+	printf(
+		'<p>&copy; %1$s %2$s</p>',
+		esc_attr( get_the_date( 'Y' ) ),
+		esc_attr( get_bloginfo( 'name' ) )
+	);
+}
