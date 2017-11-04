@@ -7,64 +7,7 @@ Theme Name: Blok
 
 // Base
 @import "base";
-
-/**
-* Typography
-*/
-body {
-	color: $color-text;
-	font-family: Arial, sans-serif;
-	font-size: $font-size-regular;
-	line-height: 1.5;
-}
-
-footer {
-	color: $color-text-secondary;
-	font-size: $font-size-small;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin-top: $margin-content;
-	margin-bottom: $margin-content;
-	color: $color-text-heading;
-	font-weight: 400;
-}
-
-h1,
-h2,
-h3 {
-	line-height: 1.2;
-}
-
-h1 {
-	font-size: $font-size-xx-large;
-}
-
-h2 {
-	font-size: $font-size-x-large;
-}
-
-h3 {
-	font-size: $font-size-large;
-}
-
-p {
-	margin-bottom: $margin-content;
-}
-
-ul,
-ol {
-	margin-bottom: $margin-content;
-}
-
-blockquote {
-	margin-bottom: $margin-content;
-}
+@import "typography";
 
 /**
 * Site Header
