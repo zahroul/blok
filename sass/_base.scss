@@ -1,0 +1,37 @@
+/**
+* Base
+*/
+
+body {
+	margin: 0;
+}
+
+article {
+	padding-right: $padding-content;
+	padding-left: $padding-content;
+}
+
+footer {
+	padding-right: $padding-content;
+	padding-left: $padding-content;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:active {
+		color: $color-text-link;
+	}
+}
+
+img {
+	width: 100%;
+}
