@@ -30,6 +30,33 @@ function blok_excerpt_more() {
 add_filter( 'excerpt_more', 'blok_excerpt_more' );
 
 /**
+ * Print HTML with the site title
+ *
+ * @param string $opening_tag The site title HTML opening tag.
+ * @param string $closing_tag The site title HTML closing tag.
+ */
+function blok_site_title( $opening_tag, $closing_tag ) {
+	printf(
+		wp_kses(
+			$opening_tag . '<a href="%1$s">%2$s</a>' . $closing_tag,
+			array(
+				'h1' => array(
+					'class' => array(),
+				),
+				'p' => array(
+					'class' => array(),
+				),
+				'a' => array(
+					'href' => array(),
+				),
+			)
+		),
+		esc_url( home_url( '/' ) ),
+		esc_attr( get_bloginfo( 'name' ) )
+	);
+}
+
+/**
  * Print HTML with the current post meta's publication time and author
  */
 function blok_post_meta() {

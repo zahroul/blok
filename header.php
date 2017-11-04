@@ -18,13 +18,11 @@
 
 	<body>
 		<header class="site-header">
-			<?php if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-				</h1>
-			<?php else : ?>
-				<p class="site-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
-				</p>
-			<?php endif; ?>
+			<?php
+			if ( is_front_page() && is_home() ) {
+				blok_site_title( '<h1 class="site-title">', '</h1>' );
+			} else {
+				blok_site_title( '<p class="site-title">', '</p>' );
+			}
+			?>
 		</header>
