@@ -2,28 +2,8 @@
 Theme Name: Blok
 */
 
-// ----------------------------------------------------------------------------
-// Variables
-// ----------------------------------------------------------------------------
-$content-margin: 1.5rem;
-$content-padding: 1.5rem;
-
-$black: #000;
-$gray-20: lighten(#000, 20%);
-$gray-dark: lighten(#000, 33.5%);
-$blue-2: #00e;
-
-$copy-text-color: $gray-20;
-$heading-text-color: $black;
-$link-text-color: $blue-2;
-$secondary-text-color: $gray-dark;
-$site-title-color: $black;
-
-$small-font-size: 0.75rem;
-$regular-font-size: 1rem;
-$large-font-size: 1.5rem;
-$x-large-font-size: 2rem;
-$xx-large-font-size: 2.5rem;
+// Core
+@import "variables";
 
 /**
 * Base
@@ -33,13 +13,13 @@ body {
 }
 
 article {
-	padding-right: $content-padding;
-	padding-left: $content-padding;
+	padding-right: $padding-content;
+	padding-left: $padding-content;
 }
 
 footer {
-	padding-right: $content-padding;
-	padding-left: $content-padding;
+	padding-right: $padding-content;
+	padding-left: $padding-content;
 }
 
 a {
@@ -54,7 +34,7 @@ a {
 	}
 
 	&:active {
-		color: $link-text-color;
+		color: $color-text-link;
 	}
 }
 
@@ -66,15 +46,15 @@ img {
 * Typography
 */
 body {
-	color: $copy-text-color;
+	color: $color-text;
 	font-family: Arial, sans-serif;
-	font-size: $regular-font-size;
+	font-size: $font-size-regular;
 	line-height: 1.5;
 }
 
 footer {
-	color: $secondary-text-color;
-	font-size: $small-font-size;
+	color: $color-text-secondary;
+	font-size: $font-size-small;
 }
 
 h1,
@@ -83,9 +63,9 @@ h3,
 h4,
 h5,
 h6 {
-	margin-top: $content-margin;
-	margin-bottom: $content-margin;
-	color: $heading-text-color;
+	margin-top: $margin-content;
+	margin-bottom: $margin-content;
+	color: $color-text-heading;
 	font-weight: 400;
 }
 
@@ -96,44 +76,44 @@ h3 {
 }
 
 h1 {
-	font-size: $xx-large-font-size;
+	font-size: $font-size-xx-large;
 }
 
 h2 {
-	font-size: $x-large-font-size;
+	font-size: $font-size-x-large;
 }
 
 h3 {
-	font-size: $large-font-size;
+	font-size: $font-size-large;
 }
 
 p {
-	margin-bottom: $content-margin;
+	margin-bottom: $margin-content;
 }
 
 ul,
 ol {
-	margin-bottom: $content-margin;
+	margin-bottom: $margin-content;
 }
 
 blockquote {
-	margin-bottom: $content-margin;
+	margin-bottom: $margin-content;
 }
 
 /**
 * Site Header
 */
 .site-header {
-	padding-right: $content-padding;
-	padding-left: $content-padding;
+	padding-right: $margin-content;
+	padding-left: $margin-content;
 }
 
 .site-title {
-	font-size: $large-font-size;
+	font-size: $font-size-large;
 	line-height: 1;
 
 	a {
-		color: $site-title-color;
+		color: $color-text-heading;
 
 		&:hover {
 			text-decoration: none;
@@ -145,9 +125,9 @@ blockquote {
 * Entry
 */
 .entry-header {
-	margin-bottom: $content-margin;
+	margin-bottom: $margin-content;
 }
 
 .entry-meta {
-	color: $secondary-text-color;
+	color: $color-text-secondary;
 }

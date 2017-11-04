@@ -1,0 +1,26 @@
+// ----------------------------------------------------------------------------
+// Variables
+// ----------------------------------------------------------------------------
+
+// Box Model
+$margin-content: 1.5rem;
+$padding-content: 1.5rem;
+
+// Brand Colors
+$black: #000;
+$gray-20: lighten(#000, 20%);
+$gray-dark: lighten(#000, 33.5%);
+$blue-2: #00e;
+
+// Colors Usage
+$color-text: $gray-20;
+$color-text-secondary: $gray-dark;
+$color-text-heading: $black;
+$color-text-link: $blue-2;
+
+// Font Sizes
+$font-size-small: 0.75rem;
+$font-size-regular: 1rem;
+$font-size-large: 1.5rem;
+$font-size-x-large: 2rem;
+$font-size-xx-large: 2.5rem;
