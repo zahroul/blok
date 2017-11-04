@@ -6,8 +6,9 @@ Theme Name: Blok
 @import "variables";
 
 // Base
-@import "base";
-@import "typography";
+@import
+	"base/base",
+	"base/typography";
 
 /**
 * Site Header
