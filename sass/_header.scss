@@ -1,0 +1,21 @@
+/**
+* Site Header
+*/
+
+.site-header {
+	padding-right: $margin-content;
+	padding-left: $margin-content;
+}
+
+.site-title {
+	font-size: $font-size-large;
+	line-height: 1;
+
+	a {
+		color: $color-text-heading;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
