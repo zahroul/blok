@@ -119,6 +119,10 @@ blockquote {
 	margin-bottom: 1.5rem;
 }
 
+.entry-title {
+	margin-bottom: 0.75rem;
+}
+
 .entry-meta {
 	color: #555;
 }
