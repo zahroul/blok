@@ -12,14 +12,4 @@ Theme Name: Blok
 
 // Layout
 @import "header";
-
-/**
-* Entry
-*/
-.entry-header {
-	margin-bottom: $margin-content;
-}
-
-.entry-meta {
-	color: $color-text-secondary;
-}
+@import "entry";
