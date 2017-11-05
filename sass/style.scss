@@ -11,5 +11,6 @@ Theme Name: Blok
 	"base/typography";
 
 // Layout
-@import "header";
-@import "entry";
+@import
+	"layout/header",
+	"layout/entry";
