@@ -17,6 +17,7 @@ nav {
 }
 
 nav {
+	overflow: hidden;
 	margin-bottom: 1.5rem;
 }
 
@@ -111,6 +112,23 @@ blockquote {
 
 .site-title a:hover {
 	text-decoration: none;
+}
+
+/**
+* Site Navigation
+*/
+.nav-next,
+.nav-previous {
+	width: 50%;
+}
+
+.nav-next {
+	float: right;
+	text-align: right;
+}
+
+.nav-previous {
+	float: left;
 }
 
 /**
