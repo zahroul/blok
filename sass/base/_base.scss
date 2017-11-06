@@ -6,14 +6,15 @@ body {
 	margin: 0;
 }
 
-article {
+article,
+footer,
+nav {
 	padding-right: $padding-content;
 	padding-left: $padding-content;
 }
 
-footer {
-	padding-right: $padding-content;
-	padding-left: $padding-content;
+nav {
+	margin-bottom: $margin-content;
 }
 
 a {

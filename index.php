@@ -39,6 +39,8 @@ get_header();
 			</article>
 		<?php
 		endwhile;
+
+		the_posts_navigation();
 	endif;
 	?>
 </main>
