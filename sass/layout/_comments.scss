@@ -15,6 +15,10 @@
 	margin-bottom: $margin-content;
 }
 
+.comment-body p:last-of-type {
+	margin-bottom: $margin-content / 3;
+}
+
 .comment-author,
 .comment-meta {
 	position: relative;
