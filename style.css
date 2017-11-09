@@ -158,6 +158,10 @@ blockquote {
 	padding-left: 0;
 }
 
+.comment {
+	margin-bottom: 1.5rem;
+}
+
 /**
 * Accessibility
 */
