@@ -14,3 +14,38 @@
 .comment {
 	margin-bottom: $margin-content;
 }
+
+.comment-author,
+.comment-meta {
+	position: relative;
+	padding-left: $padding-content * 2.5;
+}
+
+.comment-author {
+	margin-bottom: $margin-content / 3;
+}
+
+.avatar {
+	position: absolute;
+	left: 0;
+}
+
+.url {
+	color: $color-text-heading;
+
+	&:active {
+		color: $color-text-heading;
+	}
+}
+
+.comment-meta {
+	font-size: $font-size-small;
+
+	a {
+		color: $color-text-secondary;
+
+		&:active {
+			color: $color-text-secondary;
+		}
+	}
+}

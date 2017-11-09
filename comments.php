@@ -17,7 +17,8 @@
 			<?php
 			wp_list_comments(
 				array(
-					'style' => 'ol',
+					'style'       => 'ol',
+					'avatar_size' => 48,
 				)
 			);
 			?>

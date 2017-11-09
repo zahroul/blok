@@ -38,7 +38,7 @@ a:active {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 }
 
 /**
@@ -162,9 +162,45 @@ blockquote {
 	margin-bottom: 1.5rem;
 }
 
+.comment-author,
+.comment-meta {
+	position: relative;
+	padding-left: 3.75rem;
+}
+
+.comment-author {
+	margin-bottom: 0.5rem;
+}
+
+.avatar {
+	position: absolute;
+	left: 0;
+}
+
+.url {
+	color: #000;
+}
+
+.url:active {
+	color: #000;
+}
+
+.comment-meta {
+	font-size: 0.75rem;
+}
+
+.comment-meta a {
+	color: #555;
+}
+
+.comment-meta a:active {
+	color: #555;
+}
+
 /**
 * Accessibility
 */
+.says,
 .screen-reader-text {
 	overflow: hidden;
 	clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
