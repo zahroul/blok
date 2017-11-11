@@ -23,6 +23,16 @@ function blok_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'blok_enqueue_styles' );
 
 /**
+ * Enqueue the theme scripts
+ */
+function blok_enqueue_scripts() {
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'blok_enqueue_scripts' );
+
+/**
  * Modify the excerpt more's string
  *
  * @return string An ellipsis.
