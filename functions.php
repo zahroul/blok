@@ -11,6 +11,9 @@ add_theme_support( 'title-tag' );
 // Add RSS feed links to HTML <head>.
 add_theme_support( 'automatic-feed-links' );
 
+// Swith the selected default core markup to output valid HTML5.
+add_theme_support( 'html5', array( 'comment-form' ) );
+
 /**
  * Enqueue the theme styles
  */

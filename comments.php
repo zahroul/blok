@@ -25,5 +25,7 @@
 		</ol>
 	<?php
 	endif;
+
+	comment_form();
 	?>
 </section>

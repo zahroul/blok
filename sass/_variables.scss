@@ -6,14 +6,23 @@
 $margin-content: 1.5rem;
 $margin-content-comment: 0.5rem;
 $padding-content: 1.5rem;
+$padding-input: $padding-content / 5 $padding-content / 2;
 
 // Brand Colors
 $black: #000;
 $gray-20: lighten(#000, 20%);
 $gray-dark: lighten(#000, 33.5%);
+$gray-76: lighten(#000, 76%);
+$white: #fff;
 $blue-2: #00e;
 
 // Colors Usage
+$color-border-input: $gray-76;
+$color-border-button-hover: $gray-dark;
+$color-border-input-focus: $gray-dark;
+
+$color-background-button: $white;
+
 $color-text: $gray-20;
 $color-text-secondary: $gray-dark;
 $color-text-heading: $black;
