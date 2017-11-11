@@ -97,6 +97,10 @@ blockquote {
 	margin-bottom: 1.5rem;
 }
 
+small {
+	font-size: 75%;
+}
+
 /**
 * Site Header
 */
@@ -204,7 +208,7 @@ input[type="submit"]:hover {
 }
 
 .comment-body p:last-of-type {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .comment-author,
@@ -214,7 +218,7 @@ input[type="submit"]:hover {
 }
 
 .comment-author {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .avatar {
