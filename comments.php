@@ -7,7 +7,7 @@
 
 ?>
 
-<section>
+<section id="comments">
 	<?php
 	if ( have_comments() ) :
 	?>
@@ -24,6 +24,7 @@
 			?>
 		</ol>
 	<?php
+		the_comments_navigation();
 	endif;
 
 	comment_form();
