@@ -175,6 +175,11 @@ input[type="submit"]:hover {
 	float: left;
 }
 
+.posts-navigation {
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+}
+
 /**
 * Entry
 */
